@@ -1,6 +1,5 @@
 package main.java;
 
-import java.util.Date;
 import java.util.Scanner;
 
 public class Multiplication {
@@ -38,10 +37,12 @@ public class Multiplication {
 
         for(int i = bitLength - 1; i >= 0; i --){
             if(multiplicando.charAt(i) == '1'){
-                ppa = leftPad(sumBinaries(ppa, multiplicador), bitLength, "0");
+                ppa = sumBinaries(ppa, multiplicador);
                 if(ppa.length() > bitLength){
                     extraBit = ppa.charAt(0);
                     ppa = ppa.substring(1);
+                } else if(ppa.length() < bitLength){
+                    ppa = leftPad(sumBinaries(ppa, multiplicador), bitLength, "0");
                 }
             }
             String result = shiftPad(extraBit + ppa + ppq);
