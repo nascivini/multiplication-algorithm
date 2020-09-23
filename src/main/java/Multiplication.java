@@ -1,5 +1,6 @@
 package main.java;
 
+import java.util.Date;
 import java.util.Scanner;
 
 public class Multiplication {
@@ -35,7 +36,7 @@ public class Multiplication {
         String ppa = leftPad("", bitLength, "0");
         String ppq = multiplicando;
 
-        for(int i = bitLength - 1; i > 0; i --){
+        for(int i = bitLength - 1; i >= 0; i --){
             if(multiplicando.charAt(i) == '1'){
                 ppa = leftPad(sumBinaries(ppa, multiplicador), bitLength, "0");
                 if(ppa.length() > bitLength){
