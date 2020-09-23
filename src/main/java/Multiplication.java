@@ -1,5 +1,6 @@
 package main.java;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Multiplication {
@@ -54,9 +55,9 @@ public class Multiplication {
     }
 
     private static String sumBinaries(String bin1, String bin2){
-        int i = Integer.parseInt(bin1, 2);
-        int j = Integer.parseInt(bin2, 2);
-        return Integer.toBinaryString(j + i);
+        long i = new BigInteger(bin1, 2).longValue();
+        long j = new BigInteger(bin2, 2).longValue();
+        return Long.toBinaryString(j + i);
     }
 
     public static String leftPad(String input, int length, String fill){

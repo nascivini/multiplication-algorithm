@@ -1,8 +1,8 @@
 
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÙÁ²Úúÿÿÿÿ8ø…ñÙË.
-U	java:S1063"9Replace this use of System.out or System.err by a logger.(ÃµŒ£8ø…ñÙË.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(íÑØı8ø…ñÙË.
+U	java:S1066"9Replace this use of System.out or System.err by a logger.(ÃµŒ£8Û²ÃÛË.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‹óÜÏ8ø…ñÙË.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(µÏ°©8ø…ñÙË.
 ^
-java:S3457="AFormat specifiers should be used instead of string concatenation.(üÈ©¸8ø…ñÙË.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(‹óÜÏ8ø…ñÙË.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(µÏ°©8ø…ñÙË.
+java:S3457@"AFormat specifiers should be used instead of string concatenation.(üÈ©¸8ø…ñÙË.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(íÑØı8ø…ñÙË.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¶…´êúÿÿÿÿ8ø…ñÙË.
