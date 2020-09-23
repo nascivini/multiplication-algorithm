@@ -10,7 +10,7 @@ public class Multiplication {
 
     public static void init(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Algotítimo de multiplicação de binários - iniciando ...");
+        System.out.println("Algoritimo de multiplicação de binários - iniciando ...");
         System.out.println("Insira o multiplicando: ");
 
         String multiplicando = scanner.next();
