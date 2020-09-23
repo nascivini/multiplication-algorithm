@@ -1,0 +1,16 @@
+
+<
+java:S3010	"&Remove this assignment of "bitLength".(²¦¡‰
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÙÁ²Úúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(íÑØı
+N	java:S106"9Replace this use of System.out or System.err by a logger.(µÏ°©
+x
+java:S2234"]Parameters to checkInputs have the same names but not the same order as the method arguments.(óÁüÿÿÿÿ
+t
+java:S2234"^Parameters to multiplyList have the same names but not the same order as the method arguments.(£‘ÎÌ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‹óÜÏ
+L
+java:S2696""6Make the enclosing method "static" or remove this set.(Ê›¤À
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(ÃµŒ£
+W
+java:S3457>"AFormat specifiers should be used instead of string concatenation.(üÈ©¸

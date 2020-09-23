@@ -3,13 +3,12 @@ package main.java;
 import java.util.Scanner;
 
 public class Multiplication {
-    private static int bitLength;
 
-    public Multiplication(){
-        bitLength = 0;
+    public static void main(String[] args){
+        init();
     }
 
-    public void init(){
+    public static void init(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Algotítimo de multiplicação de binários - iniciando ...");
         System.out.println("Insira o multiplicando: ");
@@ -23,15 +22,15 @@ public class Multiplication {
         multiplyList(multiplicador, multiplicando);
     }
 
-    private void checkInputs(String multiplicando, String multiplicador){
+    private static void checkInputs(String multiplicador, String multiplicando){
         if(multiplicador == null || multiplicando == null || multiplicador.length() != multiplicando.length()){
             System.out.println("Os binários inseridos possuem tamanhos diferentes! Encerrando ...");
             System.exit(1);
         }
     }
 
-    private void multiplyList(String multiplicando, String multiplicador){
-        bitLength = multiplicando.length();
+    private static void multiplyList(String multiplicador, String multiplicando){
+        int bitLength = multiplicando.length();
         char extraBit = '0';
         String ppa = leftPad("", bitLength, "0");
         String ppq = multiplicando;
@@ -52,7 +51,7 @@ public class Multiplication {
         System.out.println(ppa + ppq);
     }
 
-    private String sumBinaries(String bin1, String bin2){
+    private static String sumBinaries(String bin1, String bin2){
         int i = Integer.parseInt(bin1, 2);
         int j = Integer.parseInt(bin2, 2);
         return Integer.toBinaryString(j + i);
@@ -63,10 +62,9 @@ public class Multiplication {
         return pad.substring(pad.length() - length, pad.length());
     }
 
-    private String shiftPad(String allBits){
+    private static String shiftPad(String allBits){
         allBits = allBits.substring(0, allBits.length() - 1);
         allBits = "0" + allBits;
         return allBits;
     }
-
 }
